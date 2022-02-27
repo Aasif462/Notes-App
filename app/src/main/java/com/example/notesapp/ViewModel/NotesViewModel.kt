@@ -8,14 +8,12 @@ import com.example.notesapp.Model.Notes
 import com.example.notesapp.Repository.NotesRepo
 import kotlinx.coroutines.InternalCoroutinesApi
 
-@InternalCoroutinesApi
 class NotesViewModel(application: Application) : AndroidViewModel(application)
 {
-    val notesRepo:NotesRepo
 
-    init {
+
         val dao = Database.getDatabaseInstance(application).myNotesDao()
-        notesRepo = NotesRepo(dao)
+        private val notesRepo:NotesRepo = NotesRepo(dao)
 
         fun addNotes(notes:Notes){
             notesRepo.insertNotes(notes)
@@ -32,7 +30,6 @@ class NotesViewModel(application: Application) : AndroidViewModel(application)
 
         fun updateNotes(notes: Notes){
             notesRepo.updateNotes(notes)
-        }
 
     }
 }
