@@ -76,7 +76,5 @@ class CreateNotes : Fragment() {
         else{
             Toast.makeText(context, "Title or Notes Missing!", Toast.LENGTH_SHORT).show()
         }
-
-        
     }
 }

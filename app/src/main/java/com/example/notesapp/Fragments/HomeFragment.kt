@@ -118,9 +118,9 @@ class HomeFragment : Fragment() {
         binding.lowtxt.typeface = Typeface.DEFAULT
 
         binding.alltxt.setBackgroundResource(R.drawable.select_filter_background)
-        binding.hightxt.setBackgroundResource(R.drawable.text_custom_background)
-        binding.mediumtxt.setBackgroundResource(R.drawable.text_custom_background)
-        binding.lowtxt.setBackgroundResource(R.drawable.text_custom_background)
+        binding.hightxt.setBackgroundResource(R.drawable.ripple_text_custom)
+        binding.mediumtxt.setBackgroundResource(R.drawable.ripple_text_custom)
+        binding.lowtxt.setBackgroundResource(R.drawable.ripple_text_custom)
     }
 
     private fun highTextBackground(view: View){
@@ -130,10 +130,10 @@ class HomeFragment : Fragment() {
         binding.lowtxt.typeface = Typeface.DEFAULT
 
         binding.hightxt.typeface = Typeface.DEFAULT_BOLD
-        binding.alltxt.setBackgroundResource(R.drawable.text_custom_background)
+        binding.alltxt.setBackgroundResource(R.drawable.ripple_text_custom)
         binding.hightxt.setBackgroundResource(R.drawable.select_filter_background)
-        binding.mediumtxt.setBackgroundResource(R.drawable.text_custom_background)
-        binding.lowtxt.setBackgroundResource(R.drawable.text_custom_background)
+        binding.mediumtxt.setBackgroundResource(R.drawable.ripple_text_custom)
+        binding.lowtxt.setBackgroundResource(R.drawable.ripple_text_custom)
     }
 
     private fun mediumTextBackground(view:View){
@@ -143,10 +143,10 @@ class HomeFragment : Fragment() {
         binding.lowtxt.typeface = Typeface.DEFAULT
 
         binding.mediumtxt.typeface = Typeface.DEFAULT_BOLD
-        binding.alltxt.setBackgroundResource(R.drawable.text_custom_background)
-        binding.hightxt.setBackgroundResource(R.drawable.text_custom_background)
+        binding.alltxt.setBackgroundResource(R.drawable.ripple_text_custom)
+        binding.hightxt.setBackgroundResource(R.drawable.ripple_text_custom)
         binding.mediumtxt.setBackgroundResource(R.drawable.select_filter_background)
-        binding.lowtxt.setBackgroundResource(R.drawable.text_custom_background)
+        binding.lowtxt.setBackgroundResource(R.drawable.ripple_text_custom)
     }
 
     private fun lowTextBackground(view:View){
@@ -156,9 +156,9 @@ class HomeFragment : Fragment() {
         binding.lowtxt.typeface = Typeface.DEFAULT_BOLD
 
         binding.lowtxt.typeface = Typeface.DEFAULT_BOLD
-        binding.alltxt.setBackgroundResource(R.drawable.text_custom_background)
-        binding.hightxt.setBackgroundResource(R.drawable.text_custom_background)
-        binding.mediumtxt.setBackgroundResource(R.drawable.text_custom_background)
+        binding.alltxt.setBackgroundResource(R.drawable.ripple_text_custom)
+        binding.hightxt.setBackgroundResource(R.drawable.ripple_text_custom)
+        binding.mediumtxt.setBackgroundResource(R.drawable.ripple_text_custom)
         binding.lowtxt.setBackgroundResource(R.drawable.select_filter_background)
     }
 
