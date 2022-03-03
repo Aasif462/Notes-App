@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_createNotes"
             app:destination="@id/createNotes" />
+        <action
+            android:id="@+id/action_homeFragment_to_editNotes"
+            app:destination="@id/editNotes" />
     </fragment>
     <fragment
         android:id="@+id/createNotes"
@@ -21,6 +24,14 @@
         tools:layout="@layout/fragment_create_notes" >
         <action
             android:id="@+id/action_createNotes_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotes"
+        android:name="com.example.notesapp.Fragments.EditNotes"
+        android:label="EditNotes" >
+        <action
+            android:id="@+id/action_editNotes_to_homeFragment"
             app:destination="@id/homeFragment" />
         <argument
             android:name="data"

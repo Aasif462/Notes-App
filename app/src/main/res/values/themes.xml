@@ -15,6 +15,10 @@
     <style name="ProgressBar">
         <item name="colorSecondary">@color/colorPrimary</item>
     </style>
-    
+
+    <style name="delete_bottom" parent="Widget.Design.BottomSheet.Modal">
+
+        <item name="android:background" > @drawable/delete_background</item>
+    </style>
 
 </resources>

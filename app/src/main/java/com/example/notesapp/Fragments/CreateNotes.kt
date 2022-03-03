@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.notesapp.Model.Notes
 import com.example.notesapp.R
@@ -65,13 +66,17 @@ class CreateNotes : Fragment() {
         val date = Date()
         val notesDate:CharSequence = DateFormat.format ("MMMM d yyyy" , date.time)
 
-        val data:Notes = Notes(null , title , notes , notesDate.toString() , priority)
+        if(title.isNotEmpty() || notes.isNotEmpty()){
+            val data:Notes = Notes(null , title , notes , notesDate.toString() , priority)
 
-        viewModel.addNotes(data)
+            viewModel.addNotes(data)
+            Navigation.findNavController(it!!).navigate(R.id.action_createNotes_to_homeFragment)
 
-        Toast.makeText(context, "Done!", Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(context, "Title or Notes Missing!", Toast.LENGTH_SHORT).show()
+        }
 
-        Navigation.findNavController(it!!).navigate(R.id.action_createNotes_to_homeFragment)
         
     }
 }

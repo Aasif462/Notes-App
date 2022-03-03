@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/delete_background.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/done_black.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/green_dot.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.2425" />
@@ -10,14 +11,19 @@
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/progress_bg.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/red_color.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/red_dot.xml" value="0.2425" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/search.xml" value="0.2425" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/search_background.xml" value="0.2425" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/select_filter_background.xml" value="0.2425" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/text_custom_background.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/title_background.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/yellow_dot.xml" value="0.2425" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/drawable/yes_backgroud.xml" value="0.2425" />
-        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/activity_main.xml" value="0.19912280701754387" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout-v22/fragment_home.xml" value="0.23645833333333333" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.19912280701754387" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/delete_dialog.xml" value="0.19912280701754387" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/fragment_create_notes.xml" value="0.2" />
-        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/fragment_edit_notes.xml" value="0.19912280701754387" />
+        <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/fragment_edit_notes.xml" value="0.23645833333333333" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/fragment_home.xml" value="0.19912280701754387" />
         <entry key="..\:/Android Realtime Applications/NotesApp/app/src/main/res/layout/item_notes.xml" value="0.2" />
       </map>

@@ -1,5 +1,6 @@
 package com.example.notesapp.Adapter
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
@@ -9,16 +10,26 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notesapp.Dao.NotesDao
 import com.example.notesapp.Fragments.CreateNotes
 import com.example.notesapp.Fragments.HomeFragment
+import com.example.notesapp.Fragments.HomeFragmentDirections
 import com.example.notesapp.Model.Notes
 import com.example.notesapp.R
 import com.example.notesapp.databinding.ItemNotesBinding
 import org.w3c.dom.Text
 
-class NotesAdapter(val requireContext:Context , val notesList:List<Notes>) : RecyclerView.Adapter<NotesAdapter.ViewHolder>() {
+class NotesAdapter(val requireContext:Context , var notesList:List<Notes>) : RecyclerView.Adapter<NotesAdapter.ViewHolder>() {
+
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun filtering(newFilteredList: ArrayList<Notes>) {
+        notesList = newFilteredList
+        notifyDataSetChanged()
+    }
 
 
     class ViewHolder(val binding:ItemNotesBinding) : RecyclerView.ViewHolder(binding.root)
@@ -29,21 +40,13 @@ class NotesAdapter(val requireContext:Context , val notesList:List<Notes>) : Rec
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = notesList[position]
-        holder.binding.notesTitle.text = data.title
-        holder.binding.description.text = data.note
-        holder.binding.date.text = data.date
+        holder.binding.notesTitle.text = data.title.toString()
+        holder.binding.description.text = data.note.toString()
+        holder.binding.date.text = data.date.toString()
 
         holder.binding.cardView.setOnClickListener{
-            val action = R.id.action_homeFragment_to_createNotes
+            val action = HomeFragmentDirections.actionHomeFragmentToEditNotes(data)
             Navigation.findNavController(it).navigate(action)
-        }
-
-        holder.binding.cardView.setOnLongClickListener {
-            val dialog = Dialog(requireContext)
-            dialog.setContentView(R.layout.delete_dialog)
-            dialog.show()
-            return@setOnLongClickListener true
-
         }
 
         when(data.priority){
@@ -63,13 +66,5 @@ class NotesAdapter(val requireContext:Context , val notesList:List<Notes>) : Rec
 
     override fun getItemCount(): Int  = notesList.size
 
-
-}
-
-private fun Intent.putExtra(s: String, priority: View) {
-
-}
-
-private fun Intent.putExtra(s: String, notesTitle: TextView) {
 
 }

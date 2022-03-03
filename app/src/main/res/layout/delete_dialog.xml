@@ -2,9 +2,10 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#707070"
+    android:background="@drawable/delete_background"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    style="@style/delete_bottom">
 
     <View
         android:layout_width="130dp"
